@@ -1,0 +1,22 @@
+algorithm textbook
+Exercise 1
+0.1. 
+a. f = OT(g)
+b. f = O(g)
+c. f = O(g)
+d. f = OT(g)
+e. f = OT(g)
+f. f = O(g)
+g. f = O(g)
+h. f = Om(g)
+i. f = O(g)
+j. f = O(g)
+k. f = Om(g)
+l. f = Om(g)
+m. f = O(g)
+n. f = O(g)
+o. f = O(g)
+p. f = O(g)
+q. f = OT(g)
+
+

@@ -1,0 +1,41 @@
+Algorithms
+
+Quicksort
+
+Invented by Charles Antony Hoare
+Won 1980 Turing Award
+
+Basic Plan
+- Shuffle the array
+- Partition the array, so that for some j
+  - entry a[j] is in place
+  - no larger entry to the left of j
+  - no smaller entry to the right of j
+- Sort each piece recursively
+
+
+Phase I. Repeat until i and j pointers cross.
+- Scan i from left to right so long as (a[i] < a[lo]).
+- Scan j from right to left so long as (a[j] > a[lo]).
+- Exchange a[i] with a[j]. 
+
+kratelepuimqcxos -initial
+kcatelepuimqrxos
+kcaieleputmqrxos
+kcaieelputmqrxos
+kcaieeplutmqrxos
+eaiecklputmqrxos
+
+
+Quick select:
+
+To find the kth largest item in the array
+- shuffle the array
+- while you haven't searched through the array
+- partition the array. partitioned middle index is j
+- if j < k then search the second half of the partition
+- if j >k search the lower half of the partition
+- else return a[k] as the kth item
+
+
+

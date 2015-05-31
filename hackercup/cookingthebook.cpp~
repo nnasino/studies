@@ -1,0 +1,47 @@
+/** Facebook hacker cup 2014 Torti chigozirim first attempt 
+*	Question 1: Cooking the books
+*/
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+
+using namespace std;
+void swapandprint(const string* tempString){
+	int swap = tempString[0];
+	tempString[0] = tempString[largestLoc];
+	tempString[largestLoc] = swap;
+	cout << tempString << endl;
+}
+
+int main(){
+	int largestLoc = 1;
+	int smallestLoc = 1;
+	string tempString;
+	string copyString;
+	char swap;
+	while(cin >> tempString){
+		//For every digit in the number
+		for(int i = 2, size = tempString.size(); i < size; i++){
+			if((tempString[i] - '0') > (tempString[largestLoc] - '0')){
+				largestLoc = i;
+			}
+			if((tempString[i]-'0') < (tempString[smallestLoc]-'0')){
+				if((tempString[i]-'0') != 0)
+					smallestLoc = i;
+			}
+		}
+		copyString = tempString;
+		//largest possible number
+		tempString[0] = tempString[largestLoc];
+		tempString[largestLoc] = swap;
+		cout << tempString << endl;
+		cout << endl << endl << endl;
+		
+		//smallest possible number
+		swap = copyString[0];
+		copyString[0] = copyString[smallestLoc];
+		copyString[smallestLoc] = swap;
+		cout << copyString << endl;
+		cout << endl << endl << endl;
+	}	
+} 

@@ -1,0 +1,39 @@
+1 2 3 4      - 1st row
+5 6 7 8      -  2nd row 
+9 10 11 12   - 3rd row
+13 14 15 16  - 4th row
+
+the trick is to rearrange the matrix in such a way that no card
+in the same row is in the same row after rearranging it. 
+1 5 9 13
+2 6 10 14
+3 7 11 15
+4 8 12 16
+
+Algorithm(array[][], row1, row2):
+    cardFound = false
+    card = null
+    add all elements in row1 to tempRow[]
+    swap rows to columns
+    for element in row2:
+        if element in row1:
+           if cardFound:
+              card = "More than one card"
+           else:
+               cardFound = true
+               card = element
+    print card
+
+Algorithm Swap(array[][]):
+    array[][]
+    i = 0, j = 0 
+    while i < lenth(array):
+        j = i 
+        while j < length(array):
+            temp = array[i][j]
+            array[i][j] = array[j][i]
+            array[j][i] = temp
+            j += 1
+        i += 1
+
+

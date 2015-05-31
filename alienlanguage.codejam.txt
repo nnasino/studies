@@ -1,0 +1,10 @@
+Each word consists of exactly L letters- Length
+There are exactly D words - Dictionary
+A pattern consists of exactly L tokens. 
+Each toke is either a single lowercase letter or a group of unique
+lowercase letters surrounded by parenthesis ( and ). (ab)d(dc) means the
+first letter is either a or b the second letter is definitely d and the 
+last letter is either d or c. Therefore, the pattern (ab)d(dc) can stand
+for either one of these 4 possibilities: add, adc, bdd, bdc.
+
+

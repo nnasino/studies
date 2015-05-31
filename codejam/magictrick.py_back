@@ -1,0 +1,57 @@
+#Codejam 2014 qualification round magic trick
+#nnasino
+import sys
+
+#Print out the array in the form required
+def printMatrix(array):
+    for i in range(0, len(array)):
+        for j in range(0, len(array)):
+            sys.stdout.write(str(array[i][j]) + " ")
+        print "\n"
+
+#This is used to flip the matrix
+def swapMatrix(array):
+    i = 0
+    j = 0
+    while i < len(array):
+        j = i
+        while j < len(array):
+            temp = array[i][j]
+            array[i][j] = array[j][i]
+            array[j][i] = temp
+            j += 1
+        i += 1
+
+#algorithm for solving the problem
+def magictrick(listofcards, rowOne, rowTwo):
+    cardFound = False
+    card = ""
+    tempRow = list(listofcards[rowOne-1])
+    swapMatrix(listofcards)
+    for element in listofcards[rowTwo-1]:
+        if element in tempRow:
+            if cardFound:
+                return "Bad magician!"
+		break
+            else:
+                cardFound = True
+                card = element
+    if cardFound:
+        return str(card)
+    else:
+        return "Volunteer Cheated"
+arr = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]
+magictrick(arr, 3, 2)
+
+inputFile = open("smallinput.txt", "r")
+#Read the number of cases 
+cases = int(inputFile.readline())
+count = 0
+while count < cases:
+    row_one = int(inputFile.readline())
+    word_matrix = list()
+    for i in range(0, 4):    
+        word_matrix.append(inputFile.readline().split(' '))
+    row_two = int(inputFile.readline())
+    print 'Case #%d: %s' % (count, magictrick(word_matrix, row_one, row_two))   
+    count += 1

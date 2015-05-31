@@ -1,0 +1,18 @@
+this is the chigozirim@chigozirim-lenovo-g570
+We use the git branch command to create new  branches. 
+To switch between branches, we use the checkout command. So if we have created 
+a new branch called next then to switch to it we use git checkout next.
+To view all the existing branches we use the git branch command without any 
+parameters.
+To create a new branch from a checkout of a commit we use the command git 
+checkout -b new_branch_name.
+
+combining files
+
+To merge to branches we use the merge command. passing in the two branches we wish to merge
+git merge master coins.
+Git has a command to show us the difference between a commit and its parent. We use the 
+git show commitid command.
+
+github is website that lets us share our repositories easily with other people.
+We can also view the contents of files provided they are text readable.

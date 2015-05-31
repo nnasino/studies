@@ -1,0 +1,7 @@
+Activity represents a single screen within an application. Usually limited to one
+single activity.
+
+view is an object that draws to a rectangular area on the screen and handles events,
+keystrokes etc.
+
+Intent is a message used to start another application/activity.

@@ -1,0 +1,30 @@
+I have a target to finish some courses between now 7 december 2014 to the end of this year 31 december 2014.
+Courses Include:
+-Algorithms from princeton
+-CS 61B
+-CS 169
+-CS C149
+
+Monday
+Algorithms from princeton
+CS 169
+
+Tuesday
+CS 61B
+CS C149
+
+Wednesday
+CS C149
+Algorithms from princeton
+
+Thursday
+CS 169
+CS 61B
+
+Friday
+Algorithms from princeton
+CS 169
+
+Saturday and Sunday
+Projects and practicals
+

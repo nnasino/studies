@@ -1,0 +1,31 @@
+User interfaces
+A user interface is the place and the means by which the user and the application exchange 
+information. These include the visual elements which the user can see on the screen. This 
+doesn't include the other forms of user interfaces such as audio and sensors.
+
+Activities usually display a user interface
+Android provides many classes for constructing user interfaces
+
+some of the classes
+View
+Key building block for UI components
+Occupy a rectangular space on screen
+responsible for drawing themselves and for
+handling events.
+
+ViewGroup
+We often want to have some compound view that puts together multiple individual groups.
+There are some predefined viewgroups
+
+RADIOGROUP
+TIMEPICKER 
+DATEPICKER
+WEBVIEW
+MAPVIEW
+
+Adapter and adapterviews
+this is used when different developers want to display different types of data.
+adapterviews are views whose children and data are managed by an adapter.
+Adapter manages the data and provides data views to adapterview.
+The adapter produces and returns the views when requested by the adapterview.
+

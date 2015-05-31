@@ -1,0 +1,20 @@
+Priority queue
+Collections; insert and delete items. which item to delete?
+
+Stack REmove the item most recently added.
+queue remove the item least recently added.
+randomized queue remove a random item
+priority queue remove the largest or smallest item.
+
+Priority queue applications
+event-driven simulation
+numerical computation
+data compression
+graph searching
+number theory
+artificial intelligence
+statistics
+operating systems
+discrete optimization
+spam filtering
+

@@ -1,0 +1,7 @@
+0 cookies - start
+2 cookies per second 
+if you have C cookies, you can buy a farm.
+if you buy a farm YC = YC - C
+cps = 2 + F
+cookies = 0
+if you have X cookies you win!

@@ -1,0 +1,66 @@
+#Torti Chigozirim
+#Sat 20 Sep 2014 19:07:25 WAT 
+#Python quicksort implementation
+
+
+ar = ['K', 'R','A','T','E','L', 'E', 'P', 'U', 'I', 'M', 'Q', 'C','X', 'O', 'S']
+#i = 1
+#j = len(ar)-1
+#lo = 0
+
+#Exchange items in an array
+def exchange(array, i, j):
+	temp = array[i]
+	array[i] = array[j]
+	array[j] = temp
+
+def partition(a, lo, hi):
+	print 'Partition: ' + str(a[lo:hi])
+	i = lo
+	j = hi + 1
+	while j > i:
+		if i == hi:
+			break
+		print "lo : " + str(lo)
+		i += 1
+		print "i : " + str(i)
+		if a[i] < a[lo]:
+			while(a[i] < a[lo]):
+				i += 1
+		if i >= j:
+			break		
+		#if a[j] is greater than a[lo] then scan from right to left 
+		# so long as this remains true
+		j -= 1
+		print "j : " + str(j)
+		if(a[j] > a[lo]):
+			while(a[j] > a[lo]):
+				j -= 1
+		#At this point, exchange a[i] and a[j]
+		exchange(a, i, j)
+		print a
+	j -= 1
+	#Put a[lo] in its correct place
+	exchange(a, j, lo)
+	#Return position of item
+	j += 1
+	print a
+	return j
+
+
+def intSort(a, lo, hi):
+	if(hi <= lo):
+		return
+	j = partition(a, lo, hi)
+	intSort(a, lo, j-1)
+	intSort(a, j+1, hi)
+
+def sort(a):
+	intSort(a, 0, len(a)-1)
+
+sort(ar)
+
+#print (partition2(ar, 0, len(ar)-1))
+
+print(ar)
+

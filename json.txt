@@ -1,0 +1,7 @@
+JSON
+Javascript Object Notation is a human readable text format for transmission of data over networks.
+JSON Syntax
+JSON supports two data structures:
+Collection of name/value pairs
+Ordered list of values.
+

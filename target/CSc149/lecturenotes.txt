@@ -1,0 +1,17 @@
+Introduction to Embedded Systems
+CS c149 - Berkeley
+December 12th 2014
+
+Embedded and cyber physical
+Cyber physical  systems more or less sit on the same principles with embedded systems.
+
+Modelling, Design, Analysis
+Modelling is the process of gaining a deeper understanding of a system through imitation.
+Models express what a system does or should do. 
+
+Design is the structured creation of artifacts. It specifies how a system does what it does.
+
+Analysis is the process of gaining a deeper understanding of a system through dissection. It 
+specifies why a system does what it does (or fails to do what a model says it should do). 
+
+The relevance of CPS (Cyber physical systems)
